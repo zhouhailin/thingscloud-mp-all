@@ -20,10 +20,13 @@
         <module>mp-common</module>
         <module>mp-admin</module>
 
-        <module>mp-util</module>
         <module>mp-common-service</module>
-        <module>mp-remoting</module>
+        <module>mp-common-service-main</module>
         <module>mp-common-service-message</module>
+
+        <module>mp-remoting</module>
+        <module>mp-util</module>
+
         <module>mp-sample</module>
     </modules>
 
@@ -62,6 +65,11 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>mp-common-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>mp-common-service-main</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
