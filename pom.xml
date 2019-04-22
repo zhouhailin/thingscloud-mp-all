@@ -28,6 +28,7 @@
         <module>mp-util</module>
 
         <module>mp-sample</module>
+        <module>mp-code-generator</module>
     </modules>
 
     <properties>
