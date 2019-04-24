@@ -9,8 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mp-common-service-main</artifactId>
-    <name>mp-common-service-main-${project.version}</name>
+    <artifactId>mp-common-main</artifactId>
+    <name>mp-common-main-${project.version}</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mp-common</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -12,4 +12,14 @@
     <artifactId>mp-sample</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>link.thingscloud</groupId>
+            <artifactId>mp-common-main</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>link.thingscloud</groupId>
+            <artifactId>mp-common-message</artifactId>
+        </dependency>
+    </dependencies>
 </project>

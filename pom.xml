@@ -7,9 +7,12 @@
     <groupId>link.thingscloud</groupId>
     <artifactId>thingscloud-mp-all</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <packaging>pom</packaging>
+
     <name>thingscloud-mp-all-${project.version}</name>
     <description>thingscloud messaging push</description>
+
     <url>http://thingscloud.link/mp</url>
 
     <modules>
@@ -21,8 +24,8 @@
         <module>mp-admin</module>
 
         <module>mp-common-service</module>
-        <module>mp-common-service-main</module>
-        <module>mp-common-service-message</module>
+        <module>mp-common-main</module>
+        <module>mp-common-message</module>
 
         <module>mp-remoting</module>
         <module>mp-util</module>
@@ -70,12 +73,12 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>mp-common-service-main</artifactId>
+                <artifactId>mp-common-main</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>mp-common-service-message</artifactId>
+                <artifactId>mp-common-message</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -101,12 +104,12 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
-                <version>1.1.14</version>
+                <version>1.1.16</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>1.1.14</version>
+                <version>1.1.16</version>
             </dependency>
 
             <!-- Apache commons and others -->
@@ -195,7 +198,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.47</version>
+                <version>8.0.13</version>
             </dependency>
 
             <!-- Third-party libs -->
@@ -223,12 +226,12 @@
                 <version>1.18.4</version>
             </dependency>
 
-            <!--2019-02-05 : Http Client 工具-->
-            <dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>3.14.1</version>
-            </dependency>
+            <!--            &lt;!&ndash;2019-02-05 : Http Client 工具&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.squareup.okhttp3</groupId>-->
+            <!--                <artifactId>okhttp</artifactId>-->
+            <!--                <version>3.14.1</version>-->
+            <!--            </dependency>-->
 
             <!--2018-07-01 : XML解析工具-->
             <dependency>
@@ -335,7 +338,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
         </plugins>
     </build>
 
@@ -349,25 +351,25 @@
         </plugins>
     </reporting>
 
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>sit</id>
-        </profile>
-        <profile>
-            <id>pre</id>
-        </profile>
-        <profile>
-            <id>pst</id>
-        </profile>
-        <profile>
-            <id>prod</id>
-        </profile>
-    </profiles>
+    <!--    <profiles>-->
+    <!--        <profile>-->
+    <!--            <id>dev</id>-->
+    <!--            <activation>-->
+    <!--                <activeByDefault>true</activeByDefault>-->
+    <!--            </activation>-->
+    <!--        </profile>-->
+    <!--        <profile>-->
+    <!--            <id>sit</id>-->
+    <!--        </profile>-->
+    <!--        <profile>-->
+    <!--            <id>pre</id>-->
+    <!--        </profile>-->
+    <!--        <profile>-->
+    <!--            <id>pst</id>-->
+    <!--        </profile>-->
+    <!--        <profile>-->
+    <!--            <id>prod</id>-->
+    <!--        </profile>-->
+    <!--    </profiles>-->
 
 </project>
